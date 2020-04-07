@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NCIT Test</string>
+
+    <string name="welcome_txt">مرحبا</string>
+    <string name="logout_txt">تسجيل الخروج</string>
+    <string name="sign_in_txt">تسجيل الدخول</string>
+    <string name="sign_up_txt">إنشاء حساب</string>
+    <string name="login_txt">دخول</string>
+    <string name="register_txt">تسجيل</string>
+
+    <string name="username_txt">اسم المستخدم</string>
+    <string name="password_txt">كلمة السر</string>
+    <string name="confirm_password_txt">تكرار كلمة السر</string>
+    <string name="forgot_password_txt">نسيت كلمة السر؟</string>
+
+    <string name="username_empty_msg">يرجي ادخال اسم المستخدم!</string>
+    <string name="password_empty_msg">يرجي ادخال كلمة السر!</string>
+    <string name="confirmed_empty_msg">يرجي ادخال تكرار كلمة السر!</string>
+    <string name="password_not_matched_msg">كلماتي السر غير متطابقتان!</string>
+    <string name="no_internet_msg">لا يوجد شبكة متاحة!</string>
+
+</resources>

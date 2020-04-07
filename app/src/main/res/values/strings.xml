@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NCIT Test</string>
+
+    <string name="welcome_txt">Welcome</string>
+    <string name="logout_txt">Logout</string>
+    <string name="sign_in_txt">Sign In</string>
+    <string name="sign_up_txt">Sign Up</string>
+    <string name="login_txt">Login</string>
+    <string name="register_txt">Register</string>
+
+    <string name="username_txt">Username</string>
+    <string name="password_txt">Password</string>
+    <string name="confirm_password_txt">Confirm Password</string>
+    <string name="forgot_password_txt">Forgot Password?</string>
+
+    <string name="username_empty_msg">Please enter username!</string>
+    <string name="password_empty_msg">Please enter password!</string>
+    <string name="confirmed_empty_msg">Please enter confirmed!</string>
+    <string name="password_not_matched_msg">The two passwords not matched!</string>
+    <string name="no_internet_msg">No Internet Connection</string>
+
+</resources>

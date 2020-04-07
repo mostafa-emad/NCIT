@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/sign_in_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_txt"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/colorPrimary"
+            style="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_guideline" />
+
+        <EditText
+            android:id="@+id/username_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_shape"
+            android:layout_marginTop="@dimen/padding_2xlarge"
+            android:padding="@dimen/padding_medium"
+            android:imeOptions="actionNext"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="@dimen/padding_medium"
+            android:gravity="start|center_vertical"
+            android:fontFamily="@font/font_regular"
+            android:inputType="text"
+            android:hint="@string/username_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_title_txt" />
+
+        <EditText
+            android:id="@+id/password_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_shape"
+            android:layout_marginTop="@dimen/padding_large"
+            android:padding="@dimen/padding_medium"
+            android:imeOptions="actionDone"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/padding_medium"
+            android:gravity="right|center_vertical"
+            android:inputType="textPassword"
+            android:hint="@string/password_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_txt" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_large"
+            android:background="@drawable/btn_round_shape"
+            android:fontFamily="@font/font_regular"
+            android:text="@string/sign_in_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+        <TextView
+            android:id="@+id/forget_password_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password_txt"
+            android:fontFamily="@font/font_bold"
+            android:layout_marginTop="@dimen/padding_large"
+            style="@style/Hyperlink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

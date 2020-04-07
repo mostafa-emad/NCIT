@@ -1,0 +1,27 @@
+package ncit.test.data.room.database;
+
+import android.content.Context;
+
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+
+import ncit.test.data.room.Dao.UserDao;
+import ncit.test.data.room.entity.UserEntity;
+
+@Database(entities = {UserEntity.class}, version = 1,exportSchema = false)
+public abstract class AppDatabase extends RoomDatabase {
+    private static final String DB_NAME = "app_db";
+    private static AppDatabase appDatabase;
+
+    public static AppDatabase getAppDatabase(Context context) {
+        if (appDatabase == null) {
+            appDatabase = Room.databaseBuilder(context.getApplicationContext(),
+                    AppDatabase.class, DB_NAME).allowMainThreadQueries().build();
+        }
+        return appDatabase;
+    }
+
+    public abstract UserDao userDao();
+
+}
